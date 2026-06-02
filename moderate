@@ -1,0 +1,45 @@
+docker cmds and containerization
+docker --version                # Check Docker version
+docker info                     # Display Docker information
+docker pull ubuntu              # Download Ubuntu image
+docker images                   # List downloaded images
+docker run ubuntu               # Create and run container
+docker run -it ubuntu bash      # Run Ubuntu container in interactive mode
+docker ps                       # Show running containers
+docker ps -a                    # Show all containers
+docker exec -it <container_id> bash   # Access running container
+docker stop <container_id>      # Stop container
+docker start <container_id>     # Start container
+docker restart <container_id>   # Restart container
+docker rm <container_id>        # Remove container
+docker rmi ubuntu               # Remove image
+docker logs <container_id>      # View container logs
+docker inspect <container_id>   # View container details
+docker build -t myapp .         # Build Docker image from Dockerfile
+docker run -d -p 8080:80 myapp  # Run container in background with port mapping
+docker network ls               # List Docker networks
+docker volume ls                # List Docker volumes
+docker system prune             # Remove unused Docker resources
+
+maven
+mvn -version                 # Check Maven installation
+mkdir MavenProject           # Create project folder
+cd MavenProject              # Move into project folder
+mvn archetype:generate       # Create Maven project
+cd <project-name>            # Move into generated project
+mvn validate                 # Validate project structure
+mvn compile                  # Compile source code
+mvn test                     # Run test cases
+mvn package                  # Create JAR/WAR file
+mvn verify                   # Verify package is valid
+mvn install                  # Install package into local repository
+mvn deploy                   # Deploy package to remote repository
+mvn clean                    # Delete target folder and build files
+
+salenium
+java -version                          # Check Java installation
+mvn -version                           # Check Maven installation
+mkdir SeleniumProject                  # Create project folder
+cd SeleniumProject                     # Move into project folder
+mvn archetype:generate                 # Create Maven project
+cd <project-name>                      # Open project folder
