@@ -1,1 +1,40 @@
-https://chatgpt.com/c/6a1e2629-cfbc-8322-95e3-8f31f3956bea
+pwd                     # Check current directory
+ls                      # List files and folders
+mkdir DevOpsLab         # Create a new directory
+cd DevOpsLab            # Move into directory
+touch file1.txt         # Create a new file
+echo "Hello DevOps" > file1.txt   # Write data into file
+cat file1.txt           # Display file content
+cp file1.txt file2.txt  # Copy file
+mv file2.txt newfile.txt # Rename file
+ls -l                   # Show detailed file information
+whoami                  # Display current user
+date                    # Display current date and time
+free -h                 # Check memory usage
+df -h                   # Check disk space
+cd ..                   # Move to parent directory
+rm newfile.txt          # Delete file
+rm -r DevOpsLab         # Delete directory
+
+mkdir DevOpsLab         # Create project folder
+cd DevOpsLab            # Move into project folder
+git init                # Initialize Git repository
+echo "Hello GitHub" > index.txt   # Create file
+git status              # Check repository status
+git add index.txt       # Stage specific file
+git add .               # Stage all files
+git commit -m "First Commit"   # Commit changes
+git log                 # View commit history
+git remote add origin <repository-url>   # Connect to GitHub
+git remote -v           # Verify remote repository
+git branch -M main      # Rename branch to main
+git push -u origin main # Push code to GitHub
+
+cd DevOpsLab            # Open repository folder
+git branch              # Check current branch
+echo "Second Line Added" >> index.txt   # Modify file
+cat index.txt           # View file content
+git status              # Check changes
+git add .               # Stage changes
+git commit -m "Modified index file"   # Commit changes
+git push origin main    # Push changes to GitHub
